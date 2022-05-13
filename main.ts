@@ -8,9 +8,6 @@ input.onPinPressed(TouchPin.P2, function () {
     A += 5
 })
 input.onGesture(Gesture.EightG, function () {
-    A = 0
-})
-input.onButtonPressed(Button.AB, function () {
     if (A == 1) {
         radio.sendString("A")
     } else if (A == 2) {
@@ -73,6 +70,69 @@ input.onButtonPressed(Button.AB, function () {
         radio.sendString("!")
     }
 })
+input.onButtonPressed(Button.AB, function () {
+    if (A == 1) {
+        B = 1
+    } else if (A == 2) {
+        B = 2
+    } else if (A == 3) {
+        B = 3
+    } else if (A == 4) {
+        B = 4
+    } else if (A == 5) {
+        B = 5
+    } else if (A == 6) {
+        B = 6
+    } else if (A == 7) {
+        B = 7
+    } else if (A == 8) {
+        B = 8
+    } else if (A == 9) {
+        B = 9
+    } else if (A == 10) {
+        B = 10
+    } else if (A == 11) {
+        B = 11
+    } else if (A == 12) {
+        B = 12
+    } else if (A == 13) {
+        B = 13
+    } else if (A == 14) {
+        B = 14
+    } else if (A == 15) {
+        B = 15
+    } else if (A == 16) {
+        B = 16
+    } else if (A == 17) {
+        B = 17
+    } else if (A == 18) {
+        B = 18
+    } else if (A == 19) {
+        B = 19
+    } else if (A == 20) {
+        B = 20
+    } else if (A == 21) {
+        B = 21
+    } else if (A == 22) {
+        B = 22
+    } else if (A == 23) {
+        B = 23
+    } else if (A == 24) {
+        B = 24
+    } else if (A == 25) {
+        B = 25
+    } else if (A == 26) {
+        B = 26
+    } else if (A == 27) {
+        B = 27
+    } else if (A == 28) {
+        B = 28
+    } else if (A == 0) {
+        B = 0
+    } else {
+        B = 29
+    }
+})
 radio.onReceivedString(function (receivedString) {
     basic.showString(receivedString)
 })
@@ -82,6 +142,7 @@ input.onButtonPressed(Button.B, function () {
 input.onPinPressed(TouchPin.P1, function () {
     A += -5
 })
+let B = 0
 let A = 0
 radio.setGroup(35)
 radio.setTransmitPower(7)
